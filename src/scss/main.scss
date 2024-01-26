@@ -1,0 +1,21 @@
+// базовые подключения
+// @use "sass:math";
+@import "mixins";
+@import "vars";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/logo";
+@import "./components/burger";
+@import "./components/nav";
+@import "./components/phone";
+@import "./components/hero";
+@import "./components/form";
+@import "./components/benefit";
+@import "./components/manufacturer";
+@import "./components/scheme";
+@import "./components/answers";
+@import "./components/footer";
+@import "./components/modal-form";

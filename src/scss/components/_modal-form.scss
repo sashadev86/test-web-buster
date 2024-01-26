@@ -1,0 +1,8 @@
+.modal {
+  background: transparent;
+
+  & .f-button.is-close-btn {
+    top: rem(40);
+    right: rem(40);
+  }
+}

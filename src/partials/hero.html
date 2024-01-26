@@ -1,0 +1,46 @@
+<section class="hero">
+
+  <picture>
+    <source srcset="img/hero/hero-bg.webp" type="image/webp">
+    <img loading="lazy" src="img/hero/hero-bg.png" class="hero__image" width="1920" height="850" alt="Фон секции">
+  </picture>
+
+  <picture>
+    <source srcset="img/hero/mask.webp" type="image/webp">
+    <img loading="lazy" src="img/hero/mask.png" class="hero__mask" width="1920" height="850" alt="Маска секции">
+  </picture>
+
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Оптовые поставки <span class="hero__title-subtitle">электронных компонентов</span> <span class="hero__title-end">из
+          китая день в день</span>
+      </h1>
+
+      <p class="hero__description">
+        Комплексные поставки электронных компонентов и оборудования. Подберем аналоги популярных брендов из Европы в условиях
+        санкций.
+      </p>
+
+      <ul class="hero__benefit list-reset">
+        <li class="hero__benefit-item">
+          <img loading="lazy" src="img/hero/check.svg" class="hero__benefit-item-image" width="14" height="14"
+            alt="Иконка галочки">
+          <p class="hero__benefit-item-description">Отсрочка платежей для постоянных клиентов</p>
+        </li>
+        <li class="hero__benefit-item">
+          <img loading="lazy" src="img/hero/check.svg" class="hero__benefit-item-image" width="14" height="14"
+            alt="Иконка галочки">
+          <p class="hero__benefit-item-description">Бесплатная доставка по Москве и СПБ в течение 2х часов</p>
+        </li>
+        <li class="hero__benefit-item">
+          <img loading="lazy" src="img/hero/check.svg" class="hero__benefit-item-image" width="14" height="14"
+            alt="Иконка галочки">
+          <p class="hero__benefit-item-description">Квалифицированный персональный менеджер</p>
+        </li>
+      </ul>
+    </div>
+
+    @include("form.html")
+  </div>
+</section>

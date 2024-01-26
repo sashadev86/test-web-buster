@@ -1,0 +1,30 @@
+.nav {
+  max-width: rem(801);
+  width: 100%;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(rem(1281)) {
+      align-items: flex-start;
+      flex-direction: column;
+      row-gap: rem(20);
+    }
+  }
+
+  &__link {
+    font-family: "FuturaLightC";
+    font-size: rem(18);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 122.8%;
+    color: var(--colors-white);
+    transition: color var(--animation-timing) var(--animation-transition);
+
+    &:hover {
+      color: var(--colors-orange);
+    }
+  }
+}

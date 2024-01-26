@@ -1,0 +1,191 @@
+.answers {
+  padding: rem(144) 0;
+  position: relative;
+
+  @include mobile {
+    padding-bottom: rem(70);
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  &__mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    margin-bottom: rem(40);
+    font-family: var(--font-family-secondary);
+    font-size: rem(45);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 99.8%;
+    text-align: center;
+    color: var(--colors-white);
+
+    @include mobile {
+      font-size: rem(24);
+    }
+  }
+
+  &__accordion {
+    & .ac {
+      margin-top: 0;
+      border: none;
+      border-radius: var(--radius-10);
+
+      &:not(:last-child) {
+        margin-bottom: rem(15);
+      }
+
+      &.ac.is-active > .ac-header .ac-trigger::after {
+        content: "";
+      }
+
+      & .ac-trigger:focus {
+        color: inherit;
+      }
+
+      & .ac-trigger {
+        padding: rem(29) rem(37) rem(30) rem(53);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(20);
+        font-family: var(--font-family-four);
+        font-size: rem(24);
+        font-style: normal;
+        font-weight: 600;
+        line-height: rem(28);
+        color: var(--colors-night-rider);
+        border-radius: var(--radius-10);
+        z-index: 1;
+        box-shadow: var(--box-shadow-answers-accordion-button);
+        transition: color var(--animation-timing-accordion)
+          var(--animation-transition);
+        outline: none;
+
+        @include mobile {
+          padding: rem(15);
+          font-size: rem(16);
+        }
+
+        &::after {
+          content: "";
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          transform: translate(0);
+          width: 100%;
+          height: 100%;
+          border-radius: var(--radius-10);
+          background: var(--answers-accordion-button);
+          z-index: -1;
+          opacity: 1;
+          transition: opacity var(--animation-timing-accordion)
+            var(--animation-transition);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          transform: translate(0);
+          width: 100%;
+          height: 100%;
+          border-radius: var(--radius-10);
+          background: var(--answers-accordion-button-open);
+          z-index: -1;
+          opacity: 0;
+          transition: opacity var(--animation-timing-accordion)
+            var(--animation-transition);
+        }
+
+        & .ac-trigger__icon {
+          transition: transform var(--animation-timing-accordion)
+            var(--animation-transition);
+
+          & circle {
+            transition: fill var(--animation-timing-accordion)
+              var(--animation-transition);
+          }
+
+          & path {
+            transition: fill var(--animation-timing-accordion)
+              var(--animation-transition);
+          }
+        }
+      }
+
+      &.is-active > .ac-header .ac-trigger {
+        color: var(--colors-white);
+
+        & .ac-trigger__icon {
+          transform: rotate(180deg);
+
+          & circle {
+            fill: var(--colors-white);
+            filter: drop-shadow(0px 4px 30px rgba(166, 190, 226, 0.5));
+          }
+
+          & path {
+            fill: var(--colors-navy);
+          }
+        }
+      }
+
+      &.is-active > .ac-header .ac-trigger::after {
+        opacity: 0;
+      }
+
+      &.is-active > .ac-header .ac-trigger::before {
+        opacity: 1;
+      }
+
+      & .ac-panel .ac-text {
+        padding: rem(39) rem(43) rem(45) rem(53);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: rem(20);
+
+        @include big-mobile {
+          padding: rem(15);
+        }
+
+         @include mobile {
+          padding: rem(10);
+        }
+
+        & p {
+          font-family: var(--font-family-third);
+          font-size: rem(20);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 135%;
+          color: var(--colors-night-rider);
+
+          @include mobile {
+            font-size: rem(16);
+          }
+        }
+      }
+    }
+  }
+}

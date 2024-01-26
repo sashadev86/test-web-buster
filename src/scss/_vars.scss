@@ -1,0 +1,59 @@
+// если вы хотите использовать sass-переменные - удалите root
+:root {
+  // base
+  --font-family-primary: "FuturaLightC", sans-serif;
+  --font-family-secondary: "FuturaFuturisC", sans-serif;
+  --font-family-third: "FuturaBookC", sans-serif;
+  --font-family-four: "FuturaDemiC", sans-serif;
+  --content-width: #{rem(1281)};
+  --container-offset: #{rem(15)};
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --colors-white: #ffffff;
+  --colors-portage: #969AF7;
+  --colors-navy: #06086B;
+  --colors-dark-blue: #010E8B;
+  --colors-persian-blue: #0926c0;
+  --colors-bright-grey: #626366;
+  --colors-ghost-white: #F5F3FF;
+  --colors-orange: #FFA500;
+  --colors-silver: #C0C0C0;
+  --colors-body: #F2F2F4;
+  --colors-black-111: #111111;
+  --colors-black-03: #030303;
+  --colors-deep-koamaru: #2A336C;
+  --colors-matterhorn: #555555;
+  --colors-night-rider: #333333;
+  --colors-gainsboro: #E3E3E3;
+
+  // gradient
+  --gradient-benefit: linear-gradient(90deg, rgba(150, 154, 247, 0.3) 1.34%, rgba(150, 154, 247, 0) 96.66%);
+  --gradient-violet: linear-gradient(180deg, #6A32B4 0%, #552693 100%);
+  --triangle-bottom: linear-gradient(95deg, #041080 -85.85%, #0926c0 135.37%);
+  --scheme-item-bg: linear-gradient(95deg, #041080 -2.85%, #0926c0 93.37%),
+      linear-gradient(180deg, #969af7 0%, #686eec 100%), #969af7;
+  --answers-accordion-button: linear-gradient(180deg, #FFF 50.57%, #BDC0FF 100%);
+  --answers-accordion-button-open: linear-gradient(180deg, #969AF7 0%, #686EEC 100%);
+
+;
+
+  // text-shadow
+  --text-shadow-025: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+  // box-shadow
+  --box-shadow-form-input: 1px 1px 3px 0px rgba(0, 0, 0, 0.10) inset;
+  --box-shadow-manufacturer-slide: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  --box-shadow-answers-accordion-button: 0px 0px 50px -10px rgba(22, 126, 194, 0.20);
+
+  // border-radius
+  --radius-7: #{rem(7)};
+  --radius-10: #{rem(10)};
+  --radius-30: #{rem(30)};
+  --radius-100: #{rem(100)};
+
+  // animation
+  --animation-timing: .3s;
+  --animation-timing-accordion: .3s;
+  --animation-transition: ease-in-out;
+}
