@@ -14,7 +14,7 @@
 ## Демонстрация:
 1. Для запуска проекта скайчайте репозиторий из ветки dev:
 ```
-git clone https://github.com/BANDITOS86/test-web-buster/tree/dev
+git clone https://github.com/sashadev86/test-web-buster/tree/dev
 ```
 2. Установите зависимости:
 ```
@@ -25,8 +25,8 @@ npm install
 npm run dev
 ```
 
-### Deploy : [Test SEMITEX](https://banditos86.github.io/test-web-buster/ "SEMITEX")
+### Deploy : [Test SEMITEX](https://sashadev86.github.io/test-web-buster/ "SEMITEX")
 
 
 ### Финальный результет desctop:
-[![Screenshot dev](https://github.com/BANDITOS86/my-img/blob/main/semitex.png?raw=true)](https://banditos86.github.io/test-web-buster/)
+[![Screenshot dev](https://github.com/sashadev86/my-img/blob/main/semitex.png?raw=true)](https://sashadev86.github.io/test-web-buster/)
